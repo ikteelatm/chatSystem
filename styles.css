@@ -1,0 +1,45 @@
+
+#btnAdd {
+  background-color: blue;
+  color: red;
+  padding: 10px;
+  border-radius: 10px;
+  margin:10px;
+  width: 80px;
+  font-size: 150%;
+}
+
+#btnAdd .tooltip {
+    visibility: hidden;
+    width: auto;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    margin: 30px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+#btnAdd:hover .tooltip {
+    visibility: visible;
+}
+
+iframe {
+  border: 0.2rem  outset black;
+  border-radius: 8px;
+  font:  1rem sans-serif;
+  margin: 1rem;
+  padding: 0rem;
+  float: left;
+  width: 450px;
+  height: 300px;
+
+}
+
+#drag {
+        cursor: move;
+      }

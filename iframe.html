@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <script src="./iframe.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.js"></script>
+
+    <title>iframe Window</title>
+    <style>
+        body {
+            background-color: LightSkyBlue;
+            color: black;
+            overflow:hidden;
+        }
+        #send {
+              background-color: white;
+              color: orange;
+              padding: 10px;
+              border-radius: 10px;
+              margin:10px;
+              width: 60px;
+              font-size: small;
+        }
+
+        input {
+            width: 250px;
+            height: 30px;
+            font-size: 1em;
+          }
+          #conversation {
+            top:0px;
+            overflow:auto;
+            position: absolute;
+            width: 430px;
+            height: 200px;
+          }
+
+        #footer {
+          position: fixed;
+          bottom: 2px;
+          border: 2px solid green;
+          padding: 0.1px;
+          margin: 10px;
+          
+        }
+    </style>
+</head>
+<body id="frame">
+    <div id="chat">
+      <div id="conversation"> </div>
+      <div id="footer"> 
+          <input type="text" id="txt"></input>
+          <button id="send" onclick="send()">send</button>
+      </div>
+    </div>
+</body>
+</html>
